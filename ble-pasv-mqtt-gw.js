@@ -149,6 +149,7 @@ function extractBTHomeData(payload) {
        }
      }
      if (dataType >-1) {
+       let i = dataType;
        let byteSize = datatypes[i][1];
        let factor   = datatypes[i][3];
        let rawdata = payload.slice(index, index + byteSize);
